@@ -1,0 +1,99 @@
+===============================================
+PROJET ML : CLASSIFICATION DU RISQUE DE CRÉDIT
+===============================================
+
+LIVRABLES FOURNIS :
+1. ✅ Notebook Jupyter : notebooks/ML_pipeline.ipynb
+2. ✅ Application Streamlit : streamlit-app-v2/
+3. ✅ Déploiement Docker : Dockerfile + docker-compose.yml
+
+===============================================
+OPTION 1 : LANCER SANS DOCKER (RECOMMANDÉ)
+===============================================
+
+1. Extrayez le fichier ZIP
+
+2. Ouvrez un terminal et tapez :
+
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+   cd streamlit-app-v2
+   pip install -r requirements.txt
+   pip install openpyxl scikit-learn
+   streamlit run app.py
+
+3. Accédez à : http://localhost:8501
+
+===============================================
+OPTION 2 : LANCER AVEC DOCKER (AVANCÉ)
+===============================================
+
+1. Assurez-vous que Docker est installé
+
+2. À la racine du projet, tapez :
+
+   docker-compose up
+
+3. Accédez à : http://localhost:8501
+
+===============================================
+TESTER LE NOTEBOOK
+===============================================
+
+1. Installez Jupyter :
+   pip install jupyter
+
+2. Lancez Jupyter :
+   jupyter notebook
+
+3. Ouvrez : notebooks/ML_pipeline.ipynb
+
+4. Exécutez toutes les cellules
+
+===============================================
+CONTENU DU NOTEBOOK
+===============================================
+
+✅ Récupération et vérification des données
+✅ Exploration des données (EDA)
+✅ Nettoyage et préparation des données
+✅ Développement de 3 modèles ML :
+   - Gradient Boosting (XGBoost)
+   - Support Vector Machine (SVM)
+   - Random Forest
+✅ Évaluation des modèles
+✅ Sauvegarde du meilleur modèle
+
+===============================================
+PAGES DE L'APPLICATION STREAMLIT
+===============================================
+
+1. Accueil : Présentation du projet
+2. Data : Chargement et exploration des données
+3. Cleaning : Nettoyage et préparation
+4. Modélisation : Entraînement des modèles
+5. Prédire : Prédictions sur de nouvelles données
+
+===============================================
+STRUCTURE DU PROJET
+===============================================
+
+Projet Maliki/
+├── .venv/                     # Environnement virtuel
+├── data/                      # Données (Risque_data.xls)
+├── models/                    # Modèles sauvegardés
+├── notebooks/                 # Notebook Jupyter
+├── streamlit-app-v2/          # Application Streamlit
+│   ├── pages/                 # Pages de l'app
+│   ├── src/                   # Code source
+│   ├── app.py                 # Point d'entrée
+│   └── requirements.txt        # Dépendances
+├── Dockerfile                 # Configuration Docker
+├── docker-compose.yml         # Composition Docker
+└── README.md                  # Documentation
+
+===============================================
+CONTACT
+===============================================
+
+Nom : MALIKI KAOUTAR
